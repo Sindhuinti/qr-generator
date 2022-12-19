@@ -39,7 +39,7 @@ onMouseOver={()=>{
 onMouseOut={()=>{
   setMouseOver(false)
 }}
-style={{backgroundColor: mouseOver ? "black":"white",color:mouseOver ? "white":"black"}}
+style={{backgroundColor: mouseOver ? "black":"#FFE5F1",color:mouseOver ? "white":"black"}}
 >GO!</button>}
     </div>
     </div>

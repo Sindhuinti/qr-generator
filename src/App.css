@@ -54,3 +54,13 @@ img{
 }
 
 
+
+
+button{
+  display: block;
+  margin: 20px auto;
+  background-color:white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+}

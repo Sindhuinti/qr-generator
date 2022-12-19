@@ -3,8 +3,20 @@ import {useState} from "react";
 import { QRCodeSVG } from 'qrcode.react';
 import pic from "./cat.png";
 
+
 function App() {
+
+  
   const [qrCode,setQrCode] = useState();
+  const [mouseOver,setMouseOver] = useState(false);
+
+  function gotoURL(){
+  
+    const url='http://'+qrCode;
+     
+      window.open(url,'_blank','noopener,noreferrer');
+  }
+
   return (
     <div className="App">
     <div className="container">
@@ -16,10 +28,19 @@ function App() {
     }}
     />
     
-    {qrCode ? <QRCodeSVG className="qr" value={qrCode}  /> : <img src={pic}/>  }
-    {!qrCode &&  <h1><span class="material-symbols-outlined">
-qr_code_scanner
-</span></h1>}
+    {qrCode ? <QRCodeSVG className="qr" value={qrCode}  /> : <img src={pic} alt="icon"/>  }
+    {!qrCode ?  <h1><span class="material-symbols-outlined">
+      qr_code_scanner
+</span></h1> :
+<button onClick={gotoURL}
+onMouseOver={()=>{
+  setMouseOver(true);
+}}
+onMouseOut={()=>{
+  setMouseOver(false)
+}}
+style={{backgroundColor: mouseOver ? "black":"white",color:mouseOver ? "white":"black"}}
+>GO!</button>}
     </div>
     </div>
   );

@@ -41,8 +41,11 @@ input {
   font-size: 18px;
   color: white;
   font-weight: 300;
+  
 }
-
+::placeholder{
+  color: white;
+}
 .qr{
   
   box-shadow: 5px 5px rgba(10, 10, 10, 0.2);
@@ -73,7 +76,7 @@ button{
     background-color:#2B3A55 ;
     margin: 7% 400px;
     border-radius:25px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     box-shadow: 5px 5px #676d77;
 
   }

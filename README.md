@@ -7,8 +7,8 @@ QR-code generator
 ---
 
 <div align="center">
-<img src="./demo2.png" width="400">
 <img src="./demo1.png" width="400">
+<img src="./demo2.png" width="400">
 </div>
 
 ## Features

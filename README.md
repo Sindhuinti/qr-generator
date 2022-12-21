@@ -3,7 +3,6 @@ QR-code generator
 ### Link :link: https://coruscating-belekoy-e621d9.netlify.app/
 
 
-
 ---
 
 <div align="center">
